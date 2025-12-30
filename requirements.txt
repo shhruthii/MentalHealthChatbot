@@ -1,0 +1,6 @@
+streamlit
+python-dotenv
+huggingface_hub
+# streamlit firebase-admin pyrebase4
+firebase
+huggingface-hub
