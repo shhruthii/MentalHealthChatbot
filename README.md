@@ -1,61 +1,48 @@
-🧠 AI-Powered Mental Health Chatbot
+# 🧠 AI-Powered Mental Health Chatbot
+### Generative AI | NLP | Privacy-First Design
 
-An AI-driven mental health support chatbot designed to provide empathetic, anonymous, and accessible emotional assistance using Generative AI and Natural Language Processing (NLP). The chatbot acts as a first-line support system, offering a safe, stigma-free space for users to express their feelings anytime, anywhere.
+An AI-driven mental health chatbot built using Generative AI and Natural Language Processing (NLP) to provide empathetic, anonymous, and 24/7 emotional support. The chatbot acts as a first-line support system with a strong focus on accessibility, privacy, and user experience.
 
-✨ Key Features
+---
 
-💬 Empathetic Conversations – Generates human-like, supportive responses using a fine-tuned transformer model
+## ✨ Features
 
-🕒 24/7 Availability – Always accessible, unlike traditional therapy services
+- Empathetic, context-aware conversations using a transformer-based language model  
+- 24/7 availability for mental health support  
+- Privacy-first design with no user data storage  
+- Session-based conversational memory  
+- Self-care and mindfulness recommendations  
+- Clean, calming user interface built with Streamlit  
 
-🔐 Privacy-First Design – No user data storage; secure API-based communication
+---
 
-🧠 Context-Aware Responses – Maintains session-based chat history for meaningful conversations
+## 🛠 Tech Stack
 
-🌿 Self-Care & Mindfulness Support – Provides stress management tips, grounding exercises, and motivational guidance
+- **Language:** Python  
+- **AI / NLP:** Hugging Face Transformers, `google/gemma-2-2b-it`  
+- **Frontend:** Streamlit  
+- **APIs:** Hugging Face Inference API  
+- **Security:** Environment variables (`.env`), HTTPS  
 
-🎨 Calming UI/UX – Built with Streamlit featuring avatars, animations, and soothing themes
+---
 
-🛠️ Tech Stack
+## 🏗 How It Works
 
-Programming Language
+1. User enters text through the Streamlit interface  
+2. Input is processed using NLP and sentiment understanding  
+3. The fine-tuned LLM generates empathetic responses  
+4. Session history maintains conversational context  
+5. Conversations are not stored, ensuring confidentiality  
 
-Python
+---
 
-AI & NLP
+## 🚀 Run Locally
 
-Transformer-based LLM: google/gemma-2-2b-it
+```bash
+git clone https://github.com/your-username/mental-health-chatbot.git
+cd mental-health-chatbot
+pip install -r requirements.txt
+pip install -r requirements.txt
 
-Hugging Face Transformers & Inference API
-
-Sentiment Analysis & Tokenization
-
-Frontend
-
-Streamlit
-
-Security & Deployment
-
-Environment variables (.env) for API key protection
-
-HTTPS-based API calls
-
-Deployed on Streamlit Cloud
-
-🏗️ System Architecture
-
-User Interface (Streamlit) – Accepts user input and displays responses
-
-AI Processing Layer – Processes input using a fine-tuned LLM via Hugging Face API
-
-Response Handling – Formats empathetic replies and maintains session memory
-
-Security Layer – Ensures confidentiality with no data persistence
-
-📊 Dataset & Model Training
-
-Dataset: ramachaitanya22/mental_health_and_fitness_data
-
-Cleaned and preprocessed text data (tokenization, normalization, stopword handling)
-
-Fine-tuned the pretrained model using supervised learning to improve emotional understanding and response relevance
+Run the application:
+streamlit run ui.py
